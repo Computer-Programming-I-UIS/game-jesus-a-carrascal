@@ -1,33 +1,52 @@
-float bx,by,bradio;//Bola
-int cont=0;
-int i, vx, vy  ;
-barra Barra;//Creacion del array barra
-bloques[] Bloques = new bloques [6];
+import ddf.minim.*;
+//import ddf.minim.analysis.*;
+//import ddf.minim.effects.*;
+//import ddf.minim.signals.*;
+//import ddf.minim.spi.*;
+//import ddf.minim.ugens.*;
+
+float bolax, bolay, bolar;
+float vx, vy;
+float barraw = 100, barrah = 30;
+boolean is_alive[][] =new boolean[6][8];
+
+bola bola;
+marcador marcador;
+bloques bloques;
+//float bloquew = 100, bloqueh = 30;
 void setup(){
-  size(600,600);//Tamaño ventana 
-  bx =300;//Posicion X de la bola
-  by =490;//Posicion Y de la bola
-  bradio =22;//Radio de la bola
-  vy = -3;
+  size(600,600);
+  bolax = 250;
+  bolay = 250;
+  bolar = 22;
   vx = 3;
-  Barra = new barra(250,255,560,93,18);
-//for (int i=0; i < Bloques ;i++){
-  Bloques[cont] = new bloques(255,0,100,100,30);
-  cont++;
- //}
+  vy = -4;
+  frameRate(30);
+  for(int i=0;i<6;i++){
+    for(int j=1;j<8;j++){
+      is_alive[i][j] = true;
+    }
+   }
+  bola =new bola();
+  marcador =new marcador();
+  bloques = new bloques();
 }
 void draw(){
-  background(0);//Color de fondo 
-  fill(255);//Color de la bola
-  circle(bx,by,bradio);//Dibujar la bola
-  bx += vx;
-  by += vy;
-  if(bx+bradio/2 > width) vx *= -1;//---]
-  if(bx-bradio/2 < 0) vx *= -1;// ------]--limites de la pantalla
-  if(by - bradio/2 <0) vy *= -1;//------]
-  Barra.display();//Metodo display 
+  background(255);//
+  bola.actualizar();
+  marcador.actualizar(bola);
   
-//for (int i=0; i < Bloques ;i++){
-  Bloques[i].display();
- //}
-}
+  marcador.draw();
+  bola.draw();
+  bloques.draw();
+  
+  
+  
+  fill(255,0,0);
+  rect(mouseX, 460, barraw, barrah);
+  
+  if((bolax + bolar/2 > mouseX && bolax - bolar/2 < mouseX+barraw) 
+    &&(460 < bolay + bolar/2 && bolay + bolar/2 < 460+barrah)){
+    vy *= -1;
+  }
+ }
