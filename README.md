@@ -8,7 +8,10 @@
   o salir de la ventana se pirde del jugo igualmente el juagador pierde el juego si no responde bien las preguntas.
 # link del proye
 # Caracteristicas del juego:
-  Tiene # botones:
+  Al inicio del juego aparece el menu, el cual consta de 3 botos:
+ -Boton PLay: si lo oprimimos nos dirigimos al juego.
+ -Boton CREDITOS: si lo oprimimos nos dirigimos a la seción de todos los creditos del juego.
+ -Boton SALIDA: si lo oprimimos nos salimos del juego.
 # Funcionabilidad del juego:
   Con el mouse se mueve la barra
 # Vista previa:
