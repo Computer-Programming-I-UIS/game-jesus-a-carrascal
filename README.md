@@ -9,8 +9,11 @@
 # link del proye
 # Caracteristicas del juego:
   Al inicio del juego aparece el menu, el cual consta de 3 botos:
+  
  -Boton PLay: si lo oprimimos nos dirigimos al juego.
- -Boton CREDITOS: si lo oprimimos nos dirigimos a la seción de todos los creditos del juego.
+ 
+ -Boton CREDITOS: si lo oprimimos nos dirigimos a la sección de todos los creditos del juego.
+ 
  -Boton SALIDA: si lo oprimimos nos salimos del juego.
 # Funcionabilidad del juego:
   Con el mouse se mueve la barra
