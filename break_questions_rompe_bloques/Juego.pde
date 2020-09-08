@@ -10,15 +10,34 @@ class Juego {
   int nobloque=0;
   int puntuacion;
   int mcnt;
-  int[] bloque =new int[35];//matriz de bloque
+  float aceleracion, direccion ;
+  int[] bloque = new int[35];//matriz de bloque
+
+  int bloquesDestruidos = 0;
+  int cantidadPreguntas = 15;
+  int[] posRandom = new int[cantidadPreguntas];
+  boolean preguntando = false;
 
   //Constructor
   Juego() {
     noStroke();
     principal();
+    //Llenar el vector de posiciones con valores aleatoreos.
+    for (int i = 0; i < cantidadPreguntas; i++) {                   ///////////////////////////NUEVO
+      posRandom[i] = int(random(1, 35));
+    }
   }
   // Métodos
-
+  void draw() {
+    background(255);
+    if (gseq == 0 ) {
+      inicial();
+    } else if ( gseq == 1 ) {
+      juego();
+    } else {
+      gameOver();
+    }
+  }
   void principal() {
     gseq = 0;
     box = 300;
@@ -33,19 +52,6 @@ class Juego {
     puntuacion = 0;
     mcnt = 0;
   } 
-
-  void draw() {
-    background(255);
-    if (gseq == 0 ) {
-      inicial();
-    } else if ( gseq == 1 ) {
-      juego();
-    } else {
-      gameOver();
-    }
-  }
-
-
   void inicial() {
     bola();
     barra();
@@ -71,7 +77,7 @@ class Juego {
     nobloque = 0;
     for (int i=0; i<35; i++) {     //matrix de los bloques 
       if (bloque[i] == 1) {
-        fill(0, 255, 0);
+        fill((i/5)*15, 255, 255);
         xx = (i%5)*(blan+2);
         yy = 50+(i/5)*(blal+2);
         romper(i, xx, yy);
@@ -82,9 +88,29 @@ class Juego {
       }
     }
   }
+
+
+  void preguntar() {
+    //pausar la bola 
+    preguntando = true;                                   ///////////////////////////NUEVO
+    
+    println("Debo hacer una pregunta!");
+    rect(40, 40, 60, 60);
+    text("Esto es una pregunta 1", 30, 30);
+    
+    
+    //hace las preguntas espera a que responda el usuario
+    
+    //if(/*usuario repondio*/) preguntando = false;              ///////////////////////////NUEVO
+  }
+
   void romper(int ii, int xx, int yy) {
     if (!((xx<box)&&(xx+ blan > box) && (yy<boy)&&(yy+blal >boy)) ) {//hace que se rompa los bloques 
       return;
+    }
+    bloquesDestruidos++;//pausar el                                   ///////////////////////////NUEVO
+    for (int i = 0; i < cantidadPreguntas; i++) {
+      if (bloquesDestruidos == posRandom[i]) preguntar();
     }
     bloque[ii] = 0;
     puntuacion += 10;//aumenta la puntuacion
@@ -102,18 +128,25 @@ class Juego {
     vx = -vx;//cambio de direccion
     vy = -vy;//cambio de direccion
   } 
+
   void bola() {      //dibuja la bola  
+    aceleracion = 1.08;
+    direccion = random(0.2*PI);
     rx = box;
     ry = boy;
-    box += vx;
-    boy += vy;
+    if (!preguntando) {                           ///////////////////////////NUEVO
+      box += vx;
+      boy += vy;
+    }
     if ( boy > height ) {                        //limintes de la bola o rebotes en la pantalla
       gseq=2;
     }
     if (boy < 0) {                              //limintes de la bola o rebotes en la pantalla
+      vy *= sqrt(1 + (sq(aceleracion) - 1)*sq(sin(direccion)));
       vy = -vy;
     }
     if ( (box < 0 )||(box > width)) {          //limintes de la bola o rebotes en la pantalla
+      vx *= sqrt(1 + (sq(aceleracion) - 1)*sq(sin(direccion)));
       vx = -vx;
     }
     if ( (golpe == 0)&&(bx < box) &&(bx+ban >box)&&(by < boy)&&(by+bal>boy)) {   //funcion para que golpee la barra 
@@ -143,11 +176,11 @@ class Juego {
     text(puntuacion, 530, 24);
     textSize(22);
     fill(0, 0, 255);//nombre del juego 
-    text("Break Questions", 200, 28);
+    text("Break Questions", 240, 28);
     fill(0, 0, 255);
-    text("Break Questions", 201, 28);
+    text("Break Questions", 241, 28);
     fill(0, 0, 255); 
-    text("Break Questions", 202, 28);
+    text("Break Questions", 242, 28);
   }
   void gameOver() {//anucio de fin del juego
     barra();
@@ -155,24 +188,24 @@ class Juego {
     marcador();
     textSize(50);
     fill(255, 0, 0);
-    text("GAME OVER", 160, 400); //aviso que el juego se acabo 
+    text("GAME OVER", 300, 400); //aviso que el juego se acabo 
     mcnt++;
     if ((mcnt%60)<40) {
       textSize(20);
       fill(0);
-      text("click to retry!", 200, 440);//anucion de reintera el juego
+      text("click to retry!", 300, 440);//anucion de reintera el juego
     }
     textSize(22);
     fill(255, 0, 0);//anucios
-    text("Break Questions", 280, 84);
-    text("Break Questions", 80, 84);
-    text("Break Questions", 280, 224);
-    text("Break Questions", 80, 224);
-    text("Break Questions", 360, 450);
-    text("Break Questions", 40, 450);
+    text("Break Questions", 420, 84);
+    text("Break Questions", 160, 84);
+    text("Break Questions", 420, 224);
+    text("Break Questions", 160, 224);
+    text("Break Questions", 460, 450);
+    text("Break Questions", 100, 450);
   }
   void mousePressed() {
-    if (gseq==2) {
+    if (gseq==3) {
       principal();
     }
   }
