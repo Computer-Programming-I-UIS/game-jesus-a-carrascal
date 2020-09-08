@@ -8,7 +8,7 @@
   o salir de la ventana se pirde del jugo igualmente el juagador pierde el juego si no responde bien las preguntas.
 # link del proye
 # Caracteristicas del juego:
-  Al inicio del juego aparece el menu, el cual consta de 3 botos:
+  Al inicio del juego aparece el menu, el cual consta de 3 botones:
   
  -Boton PLay: si lo oprimimos nos dirigimos al juego.
  
@@ -21,6 +21,6 @@
 # 
 # Autores:
  Jesus A. Carrascal. cod.:2183231         
- Mabel K. Arias. cod.:2171421
+ Mabel K. Arias.    cod:2171421.
 
 game-jesus-a-carrascal created by GitHub Classroom
