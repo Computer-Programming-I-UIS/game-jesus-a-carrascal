@@ -8,7 +8,7 @@ Consiste en que una pelota rebota en un barra(jugador) el cual se puede mover de
 # Librerias agregadas en el programa
 import ddf.minim.*;
 
-# link del proye
+# link del proyecto
 https://github.com/Computer-Programming-I-UIS/game-jesus-a-carrascal
 
 # Caracteristicas del juego:
