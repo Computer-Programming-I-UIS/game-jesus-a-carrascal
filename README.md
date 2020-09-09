@@ -1,4 +1,7 @@
 # Break questions
+
+![banner1](https://user-images.githubusercontent.com/68102520/92589490-3b116780-f260-11ea-907d-1041ed06b04c.png)
+
 # Descripcion:
   Consisteen en que una pelota rebota en un barra(jugador) el cual se puede mover de 
   derecha a izquierda ó de izquierda a derecha con el mouse, al rebotar la pelota en el barra(juagdor)
@@ -10,13 +13,19 @@
 # Caracteristicas del juego:
   Al inicio del juego aparece el menu, el cual consta de 3 botones:
   
+  ![inicio](https://user-images.githubusercontent.com/68102520/92586639-259a3e80-f25c-11ea-8218-2c43d9d6069d.png)
+   
  -Boton PLay: si lo oprimimos nos dirigimos al juego.
  
+ ![juego](https://user-images.githubusercontent.com/68102520/92589219-deae4800-f25f-11ea-85d3-76e24e088fcf.png)
+
  -Boton CREDITOS: si lo oprimimos nos dirigimos a la sección de todos los creditos del juego.
  
+ ![creditos](https://user-images.githubusercontent.com/68102520/92588835-3ac49c80-f25f-11ea-868a-cb0fa8f78b7f.png)
+
  -Boton SALIDA: si lo oprimimos nos salimos del juego.
  
- ![inicio](https://user-images.githubusercontent.com/68102520/92586639-259a3e80-f25c-11ea-8218-2c43d9d6069d.png)
+ 
 
 
 ## Funcionabilidad del juego:
