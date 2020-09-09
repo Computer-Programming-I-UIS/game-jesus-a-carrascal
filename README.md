@@ -3,12 +3,7 @@
 ![banner1](https://user-images.githubusercontent.com/68102520/92589490-3b116780-f260-11ea-907d-1041ed06b04c.png)
 
 # Descripcion:
-  Consisteen en que una pelota rebota en un barra(jugador) el cual se puede mover de 
-  derecha a izquierda ó de izquierda a derecha con el mouse, al rebotar la pelota en el barra(juagdor)
-  su objetivo es romper los bloques que está en situados en la parte superior de la ventana, algunos de los 
-  bloques que lo conforma contiene preguntas(sorpresa) las cuales son preguntas de cultura general,
-  la pelota siempredebe rebotar con la barra(juegador) que se mueve con el mouse, si llega a pasar del bloque o salir 
-  o salir de la ventana se pirde del jugo igualmente el juagador pierde el juego si no responde bien las preguntas.
+  Consisteen en que una pelota rebota en un barra(jugador) el cual se puede mover de Consiste en que una pelota rebota en un barra(jugador) el cual se puede mover de derecha a izquierda ó de izquierda a derecha con el mouse, al rebotar la pelota en el barra(jugador) su objetivo es romper los bloques que están situados en la parte superior de la ventana, algunos de los bloques que lo conforma contiene preguntas(sorpresa) las cuales son preguntas de cultura general, la pelota siempre debe rebotar con la barra(jugador) que se mueve con el mouse, si llega a  salir de la ventana se pierde del juego igualmente el jugador pierde el juego si no responde bien las preguntas, si el jugador pasa de nivel el siguiente es más difícil ya que la pelota se torna mas rapida.
 # link del proye
 # Caracteristicas del juego:
   Al inicio del juego aparece el menu, el cual consta de 3 botones:
@@ -29,7 +24,7 @@
 
 
 ## Funcionabilidad del juego:
-  Con el mouse se mueve la barra
+Aprender cultura general de una forma diferente y divertida.
 ## Vista previa:
 
 ![game over](https://user-images.githubusercontent.com/68102520/92589908-ec180200-f260-11ea-96c7-dae02e885840.png)
