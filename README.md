@@ -16,8 +16,7 @@
  
  -Boton SALIDA: si lo oprimimos nos salimos del juego.
  
- 
- https://user-images.githubusercontent.com/68102520/92586639-259a3e80-f25c-11ea-8218-2c43d9d6069d.png
+ ![inicio](https://user-images.githubusercontent.com/68102520/92586639-259a3e80-f25c-11ea-8218-2c43d9d6069d.png)
 
 
 ## Funcionabilidad del juego:
