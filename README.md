@@ -19,9 +19,6 @@ Consiste en que una pelota rebota en un barra(jugador) el cual se puede mover de
 
  -Boton SALIDA: si lo oprimimos nos salimos del juego.
  
- 
-
-
 ## Funcionabilidad del juego:
 Aprender cultura general de una forma diferente y divertida.
 ## Vista previa:
