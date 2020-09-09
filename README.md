@@ -25,8 +25,11 @@ Consiste en que una pelota rebota en un barra(jugador) el cual se puede mover de
 ## Funcionabilidad del juego:
 Aprender cultura general de una forma diferente y divertida.
 ## Vista previa:
-
+GAME OVER
 ![gameover](https://user-images.githubusercontent.com/68115404/92598201-19b77800-f26e-11ea-84d4-b9ae6f5c03b5.PNG)
+
+OTRO NIVEL 
+![otronivel](https://user-images.githubusercontent.com/68115404/92598406-61d69a80-f26e-11ea-8db5-126adf82b08b.PNG)
 
 ## Autores:
  Jesus A. Carrascal. cod.:2183231         
