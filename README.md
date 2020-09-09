@@ -15,12 +15,16 @@
  -Boton CREDITOS: si lo oprimimos nos dirigimos a la sección de todos los creditos del juego.
  
  -Boton SALIDA: si lo oprimimos nos salimos del juego.
+ 
+ 
  https://user-images.githubusercontent.com/68102520/92586639-259a3e80-f25c-11ea-8218-2c43d9d6069d.png
-# Funcionabilidad del juego:
+
+
+## Funcionabilidad del juego:
   Con el mouse se mueve la barra
-# Vista previa:
+## Vista previa:
 # 
-# Autores:
+## Autores:
  Jesus A. Carrascal. cod.:2183231         
  Mabel K. Arias.    cod:2171421.
 
