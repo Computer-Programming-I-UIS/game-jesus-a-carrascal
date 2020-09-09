@@ -1,6 +1,7 @@
 class Juego {
 
   //Atributos
+  int preguntas=1;
   int gseq, golpe;
   int bx=300, by=560, ban=80, bal=20;//barra
   int boan=8, boal=8;//dimenciones de la bola
@@ -94,11 +95,6 @@ class Juego {
     //pausar la bola 
     preguntando = true;                                   ///////////////////////////NUEVO
     
-    println("Debo hacer una pregunta!");
-    rect(40, 40, 60, 60);
-    text("Esto es una pregunta 1", 30, 30);
-    
-    
     //hace las preguntas espera a que responda el usuario
     
     //if(/*usuario repondio*/) preguntando = false;              ///////////////////////////NUEVO
@@ -137,6 +133,30 @@ class Juego {
     if (!preguntando) {                           ///////////////////////////NUEVO
       box += vx;
       boy += vy;
+    }
+    if(preguntando == true){
+    println("Debo hacer una pregunta!");
+    fill(255,0,0);
+    rect(100, 300, 400, 150);
+    //
+    textSize(15);
+    fill(0);
+    text("Oprima 'V' si es verdadera y 'F' si es falsa", width*0.5, height* 0.55);
+    switch (preguntas){
+    case 1: 
+    textSize(15);
+    fill(0);
+    text("¿Los juegos olimpicos se originaron en Grecia?", width*0.5, height* 0.58);
+    if( key == 'v' || key == 'V'){
+ 
+     } if (key == 'f' || key == 'F'){ 
+     text("GAME OVER", width*0.5, height*0.62);
+     }
+     
+     break;
+     default:
+     break;
+     }
     }
     if ( boy > height ) {                        //limintes de la bola o rebotes en la pantalla
       gseq=2;
@@ -195,14 +215,6 @@ class Juego {
       fill(0);
       text("click to retry!", 300, 440);//anucion de reintera el juego
     }
-    textSize(22);
-    fill(255, 0, 0);//anucios
-    text("Break Questions", 420, 84);
-    text("Break Questions", 160, 84);
-    text("Break Questions", 420, 224);
-    text("Break Questions", 160, 224);
-    text("Break Questions", 460, 450);
-    text("Break Questions", 100, 450);
   }
   void mousePressed() {
     if (gseq==3) {
