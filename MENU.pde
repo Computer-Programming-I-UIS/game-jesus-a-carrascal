@@ -1,4 +1,9 @@
 import ddf.minim.*;
+Minim gestor;
+AudioSample sonido_impactoB;
+AudioSample sonido_impactoBA;
+AudioSample sonido_impactoM1;
+
 
 PImage img;
 Boton botonPlay, botonCreditos, botonSalida;
@@ -15,6 +20,13 @@ void setup() {
   botonSalida = new Boton("SALIDA", width*0.5, height*0.78, 50 );
   ellipseMode(RADIUS);
   myJuego = new Juego();
+  gestor = new Minim(this);
+  sonido_impactoB = gestor.loadSample("golpeB1.mp3");
+  sonido_impactoB.setGain(-10);
+  sonido_impactoBA = gestor.loadSample("golpeM.mp3");
+  sonido_impactoBA.setGain(-10);
+  sonido_impactoM1 = gestor.loadSample("golpeM1.mp3");
+  sonido_impactoM1.setGain(-10);
 }
 
 

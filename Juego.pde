@@ -115,10 +115,12 @@ class Juego {
     }
     if ( (xx<rx)&&(xx+blan > rx) ) {//rebote de la bola al pegar un bloque 
       vy = -vy;//cambio de direccion 
+      sonido_impactoB.trigger();
       return;
     }
     if ( (yy <ry)&& (yy+blal> ry) ) {//rebote de la bola al pegar un bloque 
       vx = -vx;//cambio de direccion
+      sonido_impactoB.trigger();
       return;
     }
     vx = -vx;//cambio de direccion
@@ -164,13 +166,16 @@ class Juego {
     if (boy < 0) {                              //limintes de la bola o rebotes en la pantalla
       vy *= sqrt(1 + (sq(aceleracion) - 1)*sq(sin(direccion)));
       vy = -vy;
+      sonido_impactoM1.trigger();
     }
     if ( (box < 0 )||(box > width)) {          //limintes de la bola o rebotes en la pantalla
       vx *= sqrt(1 + (sq(aceleracion) - 1)*sq(sin(direccion)));
       vx = -vx;
+      sonido_impactoM1.trigger();
     }
     if ( (golpe == 0)&&(bx < box) &&(bx+ban >box)&&(by < boy)&&(by+bal>boy)) {   //funcion para que golpee la barra 
       vy = -vy;
+      sonido_impactoBA.trigger();
       golpe = 1;
       if ( nobloque == 0) { // funcion para que se reinice las  barras cuando no hay mas barra
         for (int i=0; i<35; i++) { 
