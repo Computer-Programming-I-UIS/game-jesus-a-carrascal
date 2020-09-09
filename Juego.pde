@@ -94,9 +94,9 @@ class Juego {
   void preguntar() {
     //pausar la bola 
     preguntando = true;                                   ///////////////////////////NUEVO
-    
+
     //hace las preguntas espera a que responda el usuario
-    
+
     //if(/*usuario repondio*/) preguntando = false;              ///////////////////////////NUEVO
   }
 
@@ -136,29 +136,56 @@ class Juego {
       box += vx;
       boy += vy;
     }
-    if(preguntando == true){
-    println("Debo hacer una pregunta!");
-    fill(255,0,0);
-    rect(100, 300, 400, 150);
-    //
-    textSize(15);
-    fill(0);
-    text("Oprima 'V' si es verdadera y 'F' si es falsa", width*0.5, height* 0.55);
-    switch (preguntas){
-    case 1: 
-    textSize(15);
-    fill(0);
-    text("¿Los juegos olimpicos se originaron en Grecia?", width*0.5, height* 0.58);
-    if( key == 'v' || key == 'V'){
- 
-     } if (key == 'f' || key == 'F'){ 
-     text("GAME OVER", width*0.5, height*0.62);
-     }
-     
-     break;
-     default:
-     break;
-     }
+    if (preguntando == true) {
+      println("Debo hacer una pregunta!");
+      switch (preguntas) {
+      case 1: 
+        fill(255, 0, 0);
+        rect(100, 300, 400, 150);
+        textSize(15);
+        fill(0);
+        text("Oprima 'V' si es verdadera y 'F' si es falsa", width*0.5, height* 0.55);
+        textSize(15);
+        fill(0);
+        text("¿Los juegos olimpicos se originaron en Grecia?", width*0.5, height* 0.58);
+        if ( key == 'v' || key == 'V') {
+          text("RESPUESTA ES CORRECTA", width*0.5, height*0.62);
+          preguntando = false;
+        } 
+        if (key == 'f' || key == 'F') { 
+          text("GAME OVER", width*0.5, height*0.62);
+          text("Presione 's' si desea salir", width*0.5, height*0.66);
+          if (key == 's' || key == 'S' ) {
+            exit();
+          }
+          exit();
+        }
+        break;
+      case 2: 
+        fill(255, 0, 0);
+        rect(100, 300, 400, 150);
+        textSize(15);
+        fill(0);
+        text("Oprima 'V' si es verdadera y 'F' si es falsa", width*0.5, height* 0.55);
+        textSize(15);
+        fill(0);
+        text("¿El rio Nilo es el más largo del mundo?", width*0.5, height* 0.58);
+        if (key == 'v' || key == 'V') { 
+          text("GAME OVER", width*0.5, height*0.62);
+          text("Presione 's' si desea salir", width*0.5, height*0.66);
+          if (key == 's' || key == 'S' ) {
+            exit();
+          }
+          exit();
+        }
+        if ( key == 'f' || key == 'F') {
+          text("LA RESPUESTA ES CORRECTA", width*0.5, height*0.62);
+          preguntando = false;
+        } 
+        break;
+      default:
+        break;
+      }
     }
     if ( boy > height ) {                        //limintes de la bola o rebotes en la pantalla
       gseq=2;
@@ -213,12 +240,11 @@ class Juego {
     marcador();
     textSize(50);
     fill(255, 0, 0);
-    text("GAME OVER", 300, 400); //aviso que el juego se acabo 
-    mcnt++;
-    if ((mcnt%60)<40) {
-      textSize(20);
-      fill(0);
-      text("click to retry!", 300, 440);//anucion de reintera el juego
+    text("GAME OVER", 300, 384); //aviso que el juego se acabo 
+    textSize(20);
+    text("Presione 's' si desea salir", 300, 419);
+    if (key == 's' || key == 'S') {
+      exit();
     }
   }
   void mousePressed() {

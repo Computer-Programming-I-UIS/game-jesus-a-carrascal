@@ -44,24 +44,24 @@ void draw() {
     text("QUESTIONS", width*0.55, height*0.23);// Imprime texto con sus respectivos atributos
     fill(255, 0, 0);
     text("QUESTIONS", width*0.545, height*0.23);
-    
+
     fill(0);
-    rect(520,506,46,50);//sistema operativo
+    rect(520, 506, 46, 50);//sistema operativo
     fill(255);
     textSize(22);
-    text("PC",542,520);
+    text("PC", 542, 520);
     textSize(14);
-    text("GAME",543,540);
-    rect(520,532,44,3);
+    text("GAME", 543, 540);
+    rect(520, 532, 44, 3);
     fill(66, 66, 66);//clasificacion 
-    rect(450,506,58,50);
+    rect(450, 506, 58, 50);
     fill(0, 194, 54);
-    rect(452,508,54,36);
+    rect(452, 508, 54, 36);
     fill(255);
     textSize(8);
-    text("www.pigi.info",480,548);
+    text("www.pigi.info", 480, 548);
     textSize(40);
-    text("3",480,522);
+    text("3", 480, 522);
 
     botonPlay.dibujar();    // Metodo dibujar boton "Play"
     botonCreditos.dibujar(); // Metodo dibujar boton "Creditos"
@@ -86,15 +86,15 @@ void draw() {
     text("Jesus Carrascal", width/2, height*0.51);
     text("COLABORADOR DE PROGRAMACION:", width/2, height*0.55);
     text("Alex Mantilla", width/2, height*0.58);
-    text("SONIDOS:",width/2, height*0.61);
-    text("www.sonidosmp3gratis.com",width/2, height*0.64);
-    text("Presione 's' si desea volver al menú", width/2, height*0.8);
-    if( key == 's' ){
-      
+    text("SONIDOS:", width/2, height*0.61);
+    text("www.sonidosmp3gratis.com", width/2, height*0.64);
+    text("Presione 's' si desea salir", width/2, height*0.8);
+    if ( key == 's' || key == 'S' ) {
+      exit();
     }
     break;
   case 4:
-  
+    exit();
     break;
   default:
     //Ninguna de las anteriores
@@ -132,14 +132,13 @@ void mousePressed() { // Esto ocurre cuando se da clic
     if (botonJugarPresionado()) {
       escenaMostrar = 2; //Pasar al juego
     }   
-    
+
     if (botonCreditosPresionado()) {
       escenaMostrar = 3; //Pasar a creditos
     }
 
     if (botonSalidaPresionado()) {
       escenaMostrar = 4; //Pasar a salida
-    }   
-  }       
-    
+    }
   }
+}
