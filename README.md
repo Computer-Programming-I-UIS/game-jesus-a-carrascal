@@ -37,6 +37,11 @@ OTRO NIVEL
 PREGUNTA
 ![pregunta](https://user-images.githubusercontent.com/68115404/92598666-b7ab4280-f26e-11ea-9476-4df7cf4b8378.PNG)
 
+##Gameplay
+
+![zoom_0](https://user-images.githubusercontent.com/68102520/92602452-c6e0bf00-f273-11ea-8c3e-e4ec4bc9bb49.gif)
+
+
 ## Autores:
  Jesus A. Carrascal. cod.:2183231         
  Mabel K. Arias.    cod:2171421.
