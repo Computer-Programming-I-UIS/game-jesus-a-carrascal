@@ -31,6 +31,9 @@ GAME OVER
 OTRO NIVEL 
 ![otronivel](https://user-images.githubusercontent.com/68115404/92598406-61d69a80-f26e-11ea-8db5-126adf82b08b.PNG)
 
+PREGUNTA
+![pregunta](https://user-images.githubusercontent.com/68115404/92598666-b7ab4280-f26e-11ea-9476-4df7cf4b8378.PNG)
+
 ## Autores:
  Jesus A. Carrascal. cod.:2183231         
  Mabel K. Arias.    cod:2171421.
