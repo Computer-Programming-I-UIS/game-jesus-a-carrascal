@@ -26,7 +26,7 @@ Consiste en que una pelota rebota en un barra(jugador) el cual se puede mover de
 Aprender cultura general de una forma diferente y divertida.
 ## Vista previa:
 
-![game over](https://user-images.githubusercontent.com/68102520/92589908-ec180200-f260-11ea-96c7-dae02e885840.png)
+![gameover](https://user-images.githubusercontent.com/68115404/92598201-19b77800-f26e-11ea-84d4-b9ae6f5c03b5.PNG)
 
 ## Autores:
  Jesus A. Carrascal. cod.:2183231         
