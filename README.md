@@ -31,7 +31,9 @@
 ## Funcionabilidad del juego:
   Con el mouse se mueve la barra
 ## Vista previa:
-# 
+
+![game over](https://user-images.githubusercontent.com/68102520/92589908-ec180200-f260-11ea-96c7-dae02e885840.png)
+
 ## Autores:
  Jesus A. Carrascal. cod.:2183231         
  Mabel K. Arias.    cod:2171421.
