@@ -1,14 +1,14 @@
-# Break questions
+## Break questions
 
-![banner1](https://user-images.githubusercontent.com/68102520/92589490-3b116780-f260-11ea-907d-1041ed06b04c.png)
+![banner2](https://user-images.githubusercontent.com/68102520/92673352-89664b00-f2e0-11ea-898b-d3e05460e603.jpeg)
 
-# Descripcion:
+## Descripcion:
 Consiste en que una pelota rebota en un barra(jugador) el cual se puede mover de derecha a izquierda ó de izquierda a derecha con el mouse, al rebotar la pelota en el barra(jugador) su objetivo es romper los bloques que están situados en la parte superior de la ventana, algunos de los bloques que lo conforma contiene preguntas(sorpresa) las cuales son preguntas de cultura general, la pelota siempre debe rebotar con la barra(jugador) que se mueve con el mouse, si llega a  salir de la ventana se pierde del juego igualmente el jugador pierde el juego si no responde bien las preguntas, si el jugador pasa de nivel el siguiente es más difícil ya que la pelota se torna mas rapida.
 
-# Librerias agregadas en el programa
+## Librerias agregadas en el programa
 import ddf.minim.*;
 
-# link del proyecto
+## link del proyecto
 https://github.com/Computer-Programming-I-UIS/game-jesus-a-carrascal
 
 # Caracteristicas del juego:
