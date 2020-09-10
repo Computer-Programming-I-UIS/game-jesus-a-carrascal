@@ -1,6 +1,6 @@
 ## Break questions
 
-![banner2](https://user-images.githubusercontent.com/68102520/92673352-89664b00-f2e0-11ea-898b-d3e05460e603.jpeg)
+![banner2](https://user-images.githubusercontent.com/68102520/92675826-e6183480-f2e5-11ea-94db-baa395210e97.jpeg)
 
 ## Descripcion:
 Consiste en que una pelota rebota en un barra(jugador) el cual se puede mover de derecha a izquierda ó de izquierda a derecha con el mouse, al rebotar la pelota en el barra(jugador) su objetivo es romper los bloques que están situados en la parte superior de la ventana, algunos de los bloques que lo conforma contiene preguntas(sorpresa) las cuales son preguntas de cultura general, la pelota siempre debe rebotar con la barra(jugador) que se mueve con el mouse, si llega a  salir de la ventana se pierde del juego igualmente el jugador pierde el juego si no responde bien las preguntas, si el jugador pasa de nivel el siguiente es más difícil ya que la pelota se torna mas rapida.
